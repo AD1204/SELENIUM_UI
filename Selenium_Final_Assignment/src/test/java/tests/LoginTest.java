@@ -22,7 +22,7 @@ public class LoginTest extends PBaseTest{
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		Assert.assertTrue(driver.getTitle().contains(prop.getProperty("title_text")));
 		logger.info(prop.getProperty("loggermessage3"));
-	
+	// VALID LOGIN
 		 
 	}
 
@@ -37,5 +37,6 @@ public class LoginTest extends PBaseTest{
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		logger.info(prop.getProperty("loggermessage4"));
 		Assert.assertTrue(driver.getTitle().contains(prop.getProperty("invalid_title_text")));
+		//---INVALID LOGIN-----------
 	}
 }

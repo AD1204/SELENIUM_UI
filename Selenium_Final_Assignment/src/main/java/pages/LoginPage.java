@@ -25,11 +25,11 @@ public class LoginPage {
 
 	public void clickSignin() throws InterruptedException {
 		signin.click();
-		driver.manage().timeouts().implicitlyWait(25,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 	}
 	public void enterRegisteredEmail(String mail) throws InterruptedException {
 		registered_email.sendKeys(mail);
-		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
 	}
 	public void enterPassword(String pass) throws InterruptedException {
 		password.sendKeys(pass);
