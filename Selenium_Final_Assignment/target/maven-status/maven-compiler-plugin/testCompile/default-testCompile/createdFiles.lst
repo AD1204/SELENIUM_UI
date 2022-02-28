@@ -1,0 +1,5 @@
+tests\PBaseTest.class
+tests\RegistrationTest.class
+tests\WomenSelectTest.class
+tests\LoginTest.class
+utils\ExtentReportClass.class

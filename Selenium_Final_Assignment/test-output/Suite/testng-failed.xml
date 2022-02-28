@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utils.ExtentReportClass"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="intializeDriver"/>
+          <include name="invalidLogin"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+      <class name="tests.WomenSelectTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="intializeDriver"/>
+          <include name="validateDifferentProduct"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- tests.WomenSelectTest -->
+      <class name="tests.RegistrationTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="registration"/>
+          <include name="intializeDriver"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- tests.RegistrationTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
